@@ -15,6 +15,14 @@ class ViewController: UIViewController {
     }
     @IBAction func showAlert(){
         print("Trust!")
+        let alert = UIAlertController(title: "Hello Trust!", message: "This is My first app", preferredStyle: .alert);
+        let defu = UIAlertAction(title: "one", style: .default, handler:nil);
+        let action = UIAlertAction(title: "ok", style: .destructive, handler:nil);
+        let cancel = UIAlertAction(title: "cancel", style: .cancel, handler:nil);
+        alert.addAction(defu);
+        alert.addAction(cancel);
+        alert.addAction(action);
+        present(alert,animated:true, completion:nil);
     }
 }
 
