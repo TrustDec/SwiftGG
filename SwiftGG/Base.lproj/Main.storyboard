@@ -19,11 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3F-VX-1Dd">
-                                <rect key="frame" x="138" y="269" width="45" height="30"/>
+                                <rect key="frame" x="119" y="269" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hit Me"/>
+                                <state key="normal" title="actionSheet"/>
                                 <connections>
+                                    <action selector="showActionSheet" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Bc-cN-y4e"/>
                                     <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD4-54-ndn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6If-iU-CGC">
+                                <rect key="frame" x="144" y="214" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Alert"/>
+                                <connections>
+                                    <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="exc-RL-1cA"/>
                                 </connections>
                             </button>
                         </subviews>

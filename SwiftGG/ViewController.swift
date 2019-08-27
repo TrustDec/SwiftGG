@@ -24,5 +24,16 @@ class ViewController: UIViewController {
         alert.addAction(action);
         present(alert,animated:true, completion:nil);
     }
+    @IBAction func showActionSheet(){
+        print("Trust!")
+        let select = UIAlertController(title: "选择", message: "上传材料", preferredStyle: .actionSheet);
+        let album = UIAlertAction(title: "相册", style: .default, handler:nil);
+        let photograph = UIAlertAction(title: "拍照", style: .destructive, handler:nil);
+        let cancel = UIAlertAction(title: "取消", style: .cancel, handler:nil);
+        select.addAction(album);
+        select.addAction(photograph);
+        select.addAction(cancel);
+        present(select,animated:true, completion:nil);
+    }
 }
 
