@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3F-VX-1Dd">
-                                <rect key="frame" x="119" y="269" width="83" height="30"/>
+                                <rect key="frame" x="75" y="20" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="actionSheet"/>
                                 <connections>
@@ -27,12 +27,22 @@
                                     <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD4-54-ndn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6If-iU-CGC">
-                                <rect key="frame" x="144" y="214" width="33" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6If-iU-CGC" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="8" y="20" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Alert"/>
+                                <state key="normal" title="Alert">
+                                    <color key="titleColor" red="0.1064579729" green="0.58327969199999996" blue="0.97897101679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="exc-RL-1cA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca0-Ow-a2R">
+                                <rect key="frame" x="20" y="66" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="let和var"/>
+                                <connections>
+                                    <action selector="onLetVarAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="EbX-U5-91f"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,4 +54,5 @@
             </objects>
         </scene>
     </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
